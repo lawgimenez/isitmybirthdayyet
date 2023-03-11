@@ -35,14 +35,13 @@ if today.month == 4 and today.day == 18:
 	message = bytes.fromhex(hex).decode("utf-8")
 	print(message)
 else:
-	birthDate = datetime.datetime(1986, 4, 18)
+	birthDate = date(1986, 4, 18)
 	age = calculateAge(birthDate)
 	print("Currently you are", age, "years old.")
 	# Compute days until the birth date
-	print(today.year)
-	birthDateThisYear = datetime.datetime(today.year, 4, 18)
-
-	print("Not your birthday yet.")
+	birthDateThisYear = date(today.year, 4, 18)
+	daysBeforeBirthday = birthDateThisYear - today
+	print("Not your birthday yet. But in", daysBeforeBirthday.days, "days it will be.")
 	answer = input("Wanna here a dad joke instead?\n")
 	if "y" in answer:
 		getDadJoke()
