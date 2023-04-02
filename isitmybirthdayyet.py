@@ -3,7 +3,7 @@ import datetime
 import requests
 import config
 
-print("Running isitmybirthdayyet.py v0.2")
+print("Running isitmybirthdayyet.py v0.2.1")
 
 def getDadJoke():
 	url = "https://dad-jokes.p.rapidapi.com/random/joke"
