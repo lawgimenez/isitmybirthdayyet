@@ -22,6 +22,10 @@ def getDadJoke():
 		answer = input("Ready for the punchline?\n")
 		if "y" in answer:
 			print(punchline)
+			# Ask again
+			anotherOneAnswer = input("Do you want another dad joke?\n")
+			if "y" in anotherOneAnswer:
+				getDadJoke()
 		
 
 def calculateAge(birthDate):
